@@ -208,8 +208,44 @@
             transition: 2s ease-in-out;
 
         }
-
-        /* animation image */
+        .circle{
+background-color: #29bf68;
+            border-radius: 50%;
+            opacity: 0.5;
+           margin: 12px 0;
+            position: sticky;
+            width: 40px;
+            height: 40px;
+            z-index: 100;
+            animation: circle 2s linear infinite;
+            /* gap:10px; */
+        }
+       /* #cercle1{
+        background-color: aquamarine;
+        width: 30px;
+        color:aquamarine;
+        position: absolute;
+        height: 30px;
+        border-radius: 50px;
+        top: 0;
+        right: 0;
+       }
+         */
+        @keyframes circle{
+            0%{
+                transform: translateY(300px);
+                top: 0;
+            }
+            50%{
+                transform: rotate(70deg);
+                transform: translateX(-200px);
+                bottom: 0;
+            }
+            100%{
+                transform: translate(500px);
+            }
+        }
+      
         @keyframes animate {
             0% {
                 opacity: 0;
@@ -220,7 +256,7 @@
             }
         }
 
-        /* menu css */
+        
 
         #menu {
             display: flex;
@@ -748,6 +784,12 @@
     <section id="home">
         <div class="left">
             <h4>Our new Menu</h4>
+            <div father-circle>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
             <h1>AFRICAN CHICKEN</h1>
 
             <P style="font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae pariatur praesentium debitis eaque
